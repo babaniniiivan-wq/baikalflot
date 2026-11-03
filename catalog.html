@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Оборудование для судов: БайкалФлотСервис</title>
+  <meta name="description" content="Спасательные плоты, жилеты, круги и буи, пиротехника, радиостанции, эхолоты и радары для судов на Байкале. Цена и наличие по запросу.">
+  <meta name="theme-color" content="#04142A">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:site_name" content="БайкалФлотСервис">
+  <meta property="og:title" content="Оборудование для судов на Байкале">
+  <meta property="og:description" content="Спасательные плоты, жилеты, круги и буи, пиротехника, радиостанции, эхолоты и радары. Цена и наличие по запросу.">
+  <meta property="og:url" content="https://babaniniiivan-wq.github.io/baikalflot/catalog.html">
+  <meta property="og:image" content="https://babaniniiivan-wq.github.io/baikalflot/assets/img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/png" href="assets/img/favicon-64.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/design-tokens.css?v=14">
+  <link rel="stylesheet" href="assets/styles.css?v=14">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
+
+  <header class="site-header on-dark">
+    <div class="wrap header-row">
+      <a class="logo" href="index.html" aria-label="БайкалФлотСервис, на главную">
+        <img class="logo-mark" src="assets/img/logo-mark-light.webp" width="251" height="160" alt="">
+        <span class="logo-name">БайкалФлотСервис</span>
+      </a>
+      <nav class="main-nav" id="main-nav" aria-label="Основное меню">
+        <ul>
+          <li><a href="index.html#checks">Проверки</a></li>
+          <li><a href="index.html#onboard">На борту</a></li>
+          <li><a href="catalog.html" aria-current="page">Каталог</a></li>
+          <li><a href="index.html#boats">Лодки и моторы</a></li>
+          <li><a href="index.html#contacts">Контакты</a></li>
+        </ul>
+      </nav>
+      <a class="header-phone" href="tel:+79246334040" aria-label="Позвонить: +7 924 633-40-40">
+        <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg><span>+7 924 633-40-40</span>
+      </a>
+      <button class="btn btn-secondary header-cta" type="button" data-request="">Оставить заявку</button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="Открыть меню">
+        <svg class="icon" aria-hidden="true"><use href="#i-menu"></use></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-head on-dark">
+      <div class="wrap">
+        <h1>Оборудование для судов</h1>
+        <p class="lead">Продаём и доставляем оборудование для судов на Байкале. Что-то есть в наличии, что-то привозим под заказ: запросите цену, и мы сообщим стоимость и срок.</p>
+      </div>
+    </section>
+
+    <section class="section catalog-section">
+      <div class="wrap">
+        <div class="catalog-tools">
+          <div class="search-field">
+            <label for="catalog-search">Поиск по каталогу</label>
+            <input id="catalog-search" type="search" autocomplete="off" placeholder="Например, жилет">
+          </div>
+          <div class="chips" id="catalog-chips" role="group" aria-label="Категории"></div>
+        </div>
+        <h2 class="sr-only">Товары</h2>
+        <p class="result-count" id="result-count" role="status"></p>
+        <div class="product-grid" id="product-grid"></div>
+        <div class="empty-state" id="catalog-empty" hidden>
+          <h2>Такой позиции пока нет в каталоге</h2>
+          <p>Мы можем её найти и привезти. Оставьте заявку или сбросьте поиск.</p>
+          <div class="empty-actions">
+            <button class="btn btn-primary" type="button" data-request="">Оставить заявку</button>
+            <button class="btn btn-secondary" type="button" id="catalog-reset">Сбросить поиск</button>
+          </div>
+        </div>
+        <noscript><p>Каталог работает с включённым JavaScript. Напишите нам на babanindg@yandex.ru или позвоните: +7 924 633-40-40.</p></noscript>
+      </div>
+    </section>
+
+    <section class="note-band on-dark">
+      <div class="wrap note-row">
+        <div>
+          <h2>Нужно подобрать оборудование под судно?</h2>
+          <p>Позвоните или напишите: подскажем и привезём.</p>
+        </div>
+        <a class="btn btn-white" href="index.html#contacts">Контакты</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer on-dark">
+    <div class="wrap">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><img class="logo-mark" src="assets/img/logo-mark-light.webp" width="251" height="160" alt=""><span class="logo-name">БайкалФлотСервис</span></div>
+          <p>Проверки, ремонт и оборудование для судов на Байкале.</p>
+          <p>ИП Бабанин Д.Г.</p>
+        </div>
+        <nav aria-label="Разделы сайта">
+          <p class="footer-title">Разделы</p>
+          <ul>
+            <li><a href="index.html#checks">Проверки</a></li>
+            <li><a href="index.html#onboard">На борту</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a href="index.html#boats">Лодки и моторы</a></li>
+            <li><a href="index.html#faq">Вопросы</a></li>
+          </ul>
+        </nav>
+        <div>
+          <p class="footer-title">Контакты</p>
+          <ul>
+            <li><a href="tel:+79246334040">+7 924 633-40-40</a></li>
+            <li><a href="https://wa.me/79246334040" target="_blank" rel="noopener">WhatsApp</a></li>
+            <li><a href="https://t.me/+79246334040" target="_blank" rel="noopener">Telegram</a></li>
+            <li><a href="mailto:babanindg@yandex.ru">babanindg@yandex.ru</a></li>
+            <li>г. Иркутск, ул. Баррикад, 98/1А</li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-note">Прототип сайта. В каталоге пока первые позиции, часть фотографий временно взята с Unsplash.</p>
+    </div>
+  </footer>
+
+  <div class="mobile-bar on-dark" id="mobile-bar">
+    <a class="btn btn-secondary" href="tel:+79246334040"><svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>Позвонить</a>
+    <button class="btn btn-primary" type="button" data-request="">Оставить заявку</button>
+  </div>
+
+  <script src="assets/products.js?v=14"></script>
+  <script src="assets/site.js?v=14"></script>
+</body>
+</html>
